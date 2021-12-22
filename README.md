@@ -24,3 +24,14 @@
 ### Escape sequences
 - We can format the output by using the iomanip library. ( `#include <iomanip> `)
   - we can use the ` setw() ` function to set width of a string.
+
+### File IO
+- we can read and write files, File IO steps:
+  - `#Include <fstream> `library 
+  - Create a stream, we have three options (input, output, both)
+      - `ofstream myfile` (for writing to a file)
+      - `ifstream myfile` (for reading a file)
+      - `fstream myfile`  (for reading and writing a file)
+  - Open the file  `myfile.open(“filename”) `
+  - Write or read the file
+  - Close the file `myfile.close()`
