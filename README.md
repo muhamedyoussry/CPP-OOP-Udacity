@@ -21,3 +21,6 @@
   - Main body ( `int main()` )
 
 
+### Escape sequences
+- We can format the output by using the iomanip library. ( `#include <iomanip> `)
+  - we can use the ` setw() ` function to set width of a string.
