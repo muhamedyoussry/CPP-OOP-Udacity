@@ -1,5 +1,7 @@
 # CPP OOP Udacity
 
+> *You can see the course on Udacity and what we will learn from [here](https://www.udacity.com/course/c-for-programmers--ud210)*
+
 ## Lesson 1: Basics
 
 *This lesson will cover C++ basics: Program structure, namespaces, user I/O, file I/O, and header files.*
