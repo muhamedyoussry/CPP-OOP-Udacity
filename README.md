@@ -1,4 +1,4 @@
-# CPP OOP Udacity
+# C++ OOP Udacity
 
 > *You can see the course on Udacity and what we will learn from [here](https://www.udacity.com/course/c-for-programmers--ud210)*
 
