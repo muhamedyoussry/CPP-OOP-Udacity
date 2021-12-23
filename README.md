@@ -37,3 +37,13 @@
   - Open the file  `myfile.open(“filename”) `
   - Write or read the file
   - Close the file `myfile.close()`
+
+
+###  Header files
+- have a an extension of `.hpp`
+- to include a header file you use `#include 'filename.hpp`
+
+
+### Strings User Input
+- When we want to enter strings with spaces we should use the function of `getline(cin, VariableName) ;`
+- 
