@@ -2,9 +2,12 @@
 
 > *You can see the course on Udacity and what we will learn from [here](https://www.udacity.com/course/c-for-programmers--ud210)*
 
+---
 ## Lesson 1: Basics
 
 *This lesson will cover C++ basics: Program structure, namespaces, user I/O, file I/O, and header files.*
+
+---
 
 ### why learn C++ ?
 
@@ -46,4 +49,10 @@
 
 ### Strings User Input
 - When we want to enter strings with spaces we should use the function of `getline(cin, VariableName) ;`
-- 
+
+---
+## Lesson 2: Compilation and Execution
+
+*This lesson will cover compilation and execution in a Linux/Unix environment.*
+
+---
