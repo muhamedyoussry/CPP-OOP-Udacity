@@ -14,7 +14,7 @@ Object-oriented programming has several advantages over procedural programming:
 - OOP helps to keep the C++ code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug
 - OOP makes it possible to create full reusable applications with less code and shorter development time
 
-[^1]: Introduction copied from [W3Schools](https://www.w3schools.com/cpp/cpp_oop.asp)
+[^1]: Classes and Objects Introduction copied from [W3Schools](https://www.w3schools.com/cpp/cpp_oop.asp)
 
 
 ### What are Classes and Objects?
@@ -43,4 +43,31 @@ In C++, there are three access specifiers:
 - `private` - members cannot be accessed (or viewed) from outside the class
 - `protected` - members cannot be accessed from outside the class, however, they can be accessed in inherited classes. [^2]
 
-[^2]: Introduction copied from [W3Schools](https://www.w3schools.com/cpp/cpp_access_specifiers.asp)
+[^2]: Access modifiers Introduction copied from [W3Schools](https://www.w3schools.com/cpp/cpp_access_specifiers.asp)
+
+- The Class members are `private` access modifiers in defalut.
+
+### Class Methods
+
+- Methods are the *functions* of the class. You can define it in two ways
+  1. Inside the class 
+```C++
+class MyClass {        
+  public:              
+    void myMethod() {  
+      cout << "Hello World!";
+    }
+};
+```
+ 2. Outside the class *using the scope operator `::`*
+``` C++
+class MyClass {       
+  public:             
+    void myMethod();  
+};
+
+void MyClass::myMethod() {
+  cout << "Hello World!";
+}
+```
+- Methods like functions can have parameters.
