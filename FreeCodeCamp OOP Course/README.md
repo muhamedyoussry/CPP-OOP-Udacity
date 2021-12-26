@@ -32,3 +32,15 @@ public: // Access specifier means that these attributes are accessible from outs
      string name; // string variable
 };
 ```
+
+
+### Access modifiers
+- The `public` keyword is an access specifier. Access specifiers define how the members (attributes and methods) of a class can be accessed.
+
+In C++, there are three access specifiers:
+
+- `public` - members are accessible from outside the class
+- `private` - members cannot be accessed (or viewed) from outside the class
+- `protected` - members cannot be accessed from outside the class, however, they can be accessed in inherited classes. [^2]
+
+[^2]: Introduction copied from [W3Schools](https://www.w3schools.com/cpp/cpp_access_specifiers.asp)

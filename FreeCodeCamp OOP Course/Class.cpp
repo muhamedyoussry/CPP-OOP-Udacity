@@ -9,13 +9,17 @@ class Employee
 public:             // create public access specifier
     string name;    // string variable
     string company; // string variable
-    int age;        // int variable
+    int age = 10;   // int variable
 };                  // end the class definition with a semicolon ;
 
 int main()
 {
-    int number = 100;
     Employee emp1;
-    emp1.age = number;
-    cout << "Employee age is " << emp1.age << endl;
+    cout << "Employee 1 age is " << emp1.age << endl;
+
+    emp1.age++;
+    cout << "Employee 1 age is " << emp1.age << endl;
+
+    Employee emp2;
+    cout << "Employee 2 age is " << emp2.age << endl;
 }
