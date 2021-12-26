@@ -50,7 +50,7 @@ In C++, there are three access specifiers:
 ### Class Methods
 
 - Methods are the *functions* of the class. You can define it in two ways
-  1. Inside the class 
+  1. Inside the class
 ```C++
 class MyClass {        
   public:              
@@ -59,7 +59,7 @@ class MyClass {
     }
 };
 ```
- 2. Outside the class *using the scope operator `::`*
+  2. Outside the class *using the scope operator `::`*
 ``` C++
 class MyClass {       
   public:             
