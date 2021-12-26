@@ -14,4 +14,21 @@ Object-oriented programming has several advantages over procedural programming:
 - OOP helps to keep the C++ code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug
 - OOP makes it possible to create full reusable applications with less code and shorter development time
 
-[^1]: Article from [W3Schools](https://www.w3schools.com/cpp/cpp_oop.asp)
+[^1]: Introduction copied from [W3Schools](https://www.w3schools.com/cpp/cpp_oop.asp)
+
+
+### What are Classes and Objects?
+
+- Class is the building block of OOP.
+- Class can be considered a complicated data type. For example, a user can be a class that have some attributes (data) and contain some methods (actions).
+- Class attributes are considered *variables*, and methods are considered *functions*.
+- Class is a blueprint for creating objects.
+- Class is a template for objects, and an object is an instance of a class.
+- To create a class in C++
+``` C++ 
+class MyClass{ // define the class name
+public: // Access specifier means that these attributes are accessible from outside the class
+     int number; // integer variable
+     string name; // string variable
+};
+```
