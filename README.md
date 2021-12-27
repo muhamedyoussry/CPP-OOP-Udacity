@@ -43,7 +43,7 @@
 
 ###  Header files
 - have a an extension of `.hpp`
-- to include a header file you use `#include 'filename.hpp`
+- to include a header file you use `#include 'filename.hpp'`
 
 
 ### Strings User Input
@@ -78,3 +78,20 @@
 
 ---
 ## Lesson 4: Control Flow
+
+### Operators
+- Relational operators [W3Schools Guide](https://www.w3schools.com/cpp/cpp_operators_comparison.asp)
+- Logical operators [W3Schools Guide](https://www.w3schools.com/cpp/cpp_operators_logical.asp)
+- Bitwise operators [GeeksForGeeks Guide](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/)
+
+### Conditional Statements
+- if statement
+- if-else statement
+- if else-if statements
+- switch statement
+
+
+### Loops
+- for loop
+- while loop
+- do-while loop
