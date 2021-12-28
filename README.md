@@ -78,6 +78,7 @@
 
 ---
 ## Lesson 4: Control Flow
+*This lesson covers: relational operators, logic operatoes, conditional statements and loops*
 
 ### Operators
 - Relational operators [W3Schools Guide](https://www.w3schools.com/cpp/cpp_operators_comparison.asp)
@@ -95,3 +96,22 @@
 - for loop
 - while loop
 - do-while loop
+
+---
+## Pointers
+*this lesson specifies what is pointers, why we need it and how we use it*
+
+- pointers are fundemntal to dealing with hardware.
+- we can get the memory address of a variable by using the `&` operator
+- pointer stores the memory address as a value.
+- pointer data type should be the same as the data type it points to or it reference to.
+- to get the value from a pointer use the dereference operator `*`
+- the `*` sign has two differenet uses 
+  - When used in declaration `string* ptr`, it *creates a pointer variable*
+  - When not used in declaration, it act as a *dereference operator*.
+
+---
+## Arrays
+*in this lesson we will learn about hte most famous data structure which are single and multi-dimensional arrrays*
+
+- 

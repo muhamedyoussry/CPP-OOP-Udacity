@@ -72,3 +72,8 @@ void MyClass::myMethod() {
 }
 ```
 - Methods like functions can have parameters.
+
+### Constructors
+
+- constructors is a special method that called automatically when an object of a class is created.
+- 
