@@ -137,3 +137,17 @@
   - with passing by reference through declaration `int &a = b`
   - you can see the difference in the [ChangeParam.cpp](https://github.com/muhamedyoussry/CPP-OOP-Udacity/blob/main/Lesson%207%20Quizes/ChangeParam.cpp) file
 
+- C++ does not allow arrays to be passed to functions, but, as we have seen, it does allow pointers to be passed. So, **there are three methods for passing an array by reference to a function:**
+  - void functionName(variableType *arrayName)
+  - void functionName(variableType arrayName[length of array])
+  - void functionName(variableType arrayName[])
+
+- A *static* variable remains in memory while the program is running and it is important for return an array from a function
+  - C++ does not advocate to return the address of a local variable to outside of the function so you would have to define the local variable as *static* variable.
+- When creating functions there is a precaution that is often considered a 'best practice'.
+  - When passing variables that are not going to be modified in the function, define the variable as a 'const' so that it cannot be changed by the function.
+
+--- 
+## Classes
+*The basics of classes, how to define and use them. overview of the OOP*
+
