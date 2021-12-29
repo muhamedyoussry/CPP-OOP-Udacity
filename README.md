@@ -122,4 +122,18 @@
 ## Funcions
 *declaring and defining functions, passing by reference, include passing arrays to functions.*
 
-- 
+- All C++ functions must have:
+  - A declaration: this is a statement of how the function is to be called
+  - A definition: this is the statement(s) of the task the function performs when called
+
+
+- C++ functions can:
+  - Accept parameters, but they are not required
+  - Return values, but a return value is not required
+  - Can modify parameters, if given explicit direction to do so
+- Passing parameters by value and by reference
+- We can pass parameters by reference in two ways:
+  - with pinters `int *pr = b`
+  - with passing by reference through declaration `int &a = b`
+  - you can see the difference in the [ChangeParam.cpp]() file
+
