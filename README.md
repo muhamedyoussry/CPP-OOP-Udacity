@@ -135,5 +135,5 @@
 - We can pass parameters by reference in two ways:
   - with pinters `int *pr = b`
   - with passing by reference through declaration `int &a = b`
-  - you can see the difference in the [ChangeParam.cpp]() file
+  - you can see the difference in the [ChangeParam.cpp](https://github.com/muhamedyoussry/CPP-OOP-Udacity/blob/main/Lesson%207%20Quizes/ChangeParam.cpp) file
 
