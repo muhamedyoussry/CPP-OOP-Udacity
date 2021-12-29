@@ -112,6 +112,14 @@
 
 ---
 ## Arrays
-*in this lesson we will learn about hte most famous data structure which are single and multi-dimensional arrrays*
+*this lesson we will learn about hte most famous data structure which are single and multi-dimensional arrrays*
+
+- Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+- *In C++ you don't need to learn arrays.* Because there is a good case that instead of using arrays, you can use vectors. Vectors are more powerful /versatile than arrays.
+- Multidimensional arrays.
+
+---
+## Funcions
+*declaring and defining functions, passing by reference, include passing arrays to functions.*
 
 - 
