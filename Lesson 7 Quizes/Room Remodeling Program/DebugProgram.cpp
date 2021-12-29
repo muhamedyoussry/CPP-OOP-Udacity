@@ -72,7 +72,7 @@ int main()
     }
 
     // if a floor is to be done, get the square footage of the room
-    if (task == carpet or task == tile or task == woodFloor)
+    if (task == carpet || task == tile || task == woodFloor)
     {
         // calculate and print the estimates
         floorArea = calcFloorArea(roomWidth, roomDepth);
