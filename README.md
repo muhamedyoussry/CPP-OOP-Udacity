@@ -151,3 +151,5 @@
 ## Classes
 *The basics of classes, how to define and use them. overview of the OOP*
 
+- Classes allow the user to build their own data types according to their application. (user-defined type = Class)
+- 
