@@ -152,6 +152,7 @@
 *The basics of classes, how to define and use them. overview of the OOP*
 
 - Classes allow the user to build their own data types according to their application. (user-defined type = Class)
+- OOP clases will be specified in the [FreeCodeCamp OOP document](https://github.com/muhamedyoussry/CPP-OOP-Udacity/tree/main/FreeCodeCamp%20OOP%20Course) 
 
 <center><img src="https://st2.depositphotos.com/1024849/7268/v/600/depositphotos_72683299-stock-illustration-doodle-tic-tac-toe-game.jpg" style="height: 300px;"></center>
 
