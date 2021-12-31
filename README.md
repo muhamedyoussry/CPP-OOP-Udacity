@@ -152,4 +152,8 @@
 *The basics of classes, how to define and use them. overview of the OOP*
 
 - Classes allow the user to build their own data types according to their application. (user-defined type = Class)
-- 
+
+<center><img src="https://st2.depositphotos.com/1024849/7268/v/600/depositphotos_72683299-stock-illustration-doodle-tic-tac-toe-game.jpg" style="height: 300px;"></center>
+
+[TicTacToe Game](https://github.com/muhamedyoussry/CPP-OOP-Udacity/tree/main/Lesson%208%20Quizes/TicTacToe) *Created by Mohamed Youssry*
+
