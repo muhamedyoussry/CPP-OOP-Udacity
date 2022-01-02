@@ -222,5 +222,6 @@ class Pet : public Patient, public Dog
 ## Lesson 13: Vectors and Iterators
 *vectors are way bettern than arrays*
 
-- 
+- Vectors are more versatile than arrays, and can be resized during runtime. We can also insert elements into a vector
+- `Assign` assign a value to number of vector indicies, `Push_back` to the end of the vector, `Insert` in a specific location in the vector.
 
