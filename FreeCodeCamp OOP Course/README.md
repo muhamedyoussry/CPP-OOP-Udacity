@@ -1,7 +1,8 @@
 # FreeCodeCamp Course
 *this an online free simple [course](https://www.youtube.com/watch?v=wN0x9eZLix4) on YouTube to apply on the fundementals of the OOP and document my learning journey to get back to it at anytime.*
 
-### What is OOP?
+---
+## What is OOP?
 
 OOP stands for Object-Oriented Programming. [^1]
   
@@ -16,8 +17,8 @@ Object-oriented programming has several advantages over procedural programming:
 
 [^1]: Classes and Objects Introduction copied from [W3Schools](https://www.w3schools.com/cpp/cpp_oop.asp)
 
-
-### What are Classes and Objects?
+---
+## What are Classes and Objects?
 
 - Class is the building block of OOP.
 - Class can be considered a complicated data type. For example, a user can be a class that have some attributes (data) and contain some methods (actions).
@@ -33,8 +34,8 @@ public: // Access specifier means that these attributes are accessible from outs
 };
 ```
 
-
-### Access modifiers
+---
+## Access modifiers
 - The `public` keyword is an access specifier. Access specifiers define how the members (attributes and methods) of a class can be accessed.
 
 In C++, there are three access specifiers:
@@ -47,7 +48,9 @@ In C++, there are three access specifiers:
 
 - The Class members are `private` access modifiers in defalut.
 
-### Class Methods
+
+---
+## Class Methods
 
 - Methods are the *functions* of the class. You can define it in two ways
   
@@ -72,8 +75,8 @@ void MyClass::myMethod() {
 }
 ```
 - Methods like functions can have parameters.
-
-### Constructors
+---
+## Constructors
 
 - constructors is a special method that called automatically when an object of a class is created.
 - 

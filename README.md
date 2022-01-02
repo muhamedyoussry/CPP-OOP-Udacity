@@ -80,25 +80,25 @@
 ## Lesson 4: Control Flow
 *This lesson covers: relational operators, logic operatoes, conditional statements and loops*
 
-### Operators
+## Operators
 - Relational operators [W3Schools Guide](https://www.w3schools.com/cpp/cpp_operators_comparison.asp)
 - Logical operators [W3Schools Guide](https://www.w3schools.com/cpp/cpp_operators_logical.asp)
 - Bitwise operators [GeeksForGeeks Guide](https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/)
 
-### Conditional Statements
+## Conditional Statements
 - if statement
 - if-else statement
 - if else-if statements
 - switch statement
 
 
-### Loops
+## Loops
 - for loop
 - while loop
 - do-while loop
 
 ---
-## Pointers
+## Lesson 5: Pointers
 *this lesson specifies what is pointers, why we need it and how we use it*
 
 - pointers are fundemntal to dealing with hardware.
@@ -111,7 +111,7 @@
   - When not used in declaration, it act as a *dereference operator*.
 
 ---
-## Arrays
+## Lesson 6: Arrays
 *this lesson we will learn about hte most famous data structure which are single and multi-dimensional arrrays*
 
 - Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
@@ -119,7 +119,7 @@
 - Multidimensional arrays.
 
 ---
-## Funcions
+## Lesson 7: Funcions
 *declaring and defining functions, passing by reference, include passing arrays to functions.*
 
 - All C++ functions must have:
@@ -148,7 +148,7 @@
   - When passing variables that are not going to be modified in the function, define the variable as a 'const' so that it cannot be changed by the function.
 
 --- 
-## Classes
+## Lesson 8: Classes
 *The basics of classes, how to define and use them. overview of the OOP*
 
 - Classes allow the user to build their own data types according to their application. (user-defined type = Class)
@@ -159,7 +159,7 @@
 [TicTacToe Game](https://github.com/muhamedyoussry/CPP-OOP-Udacity/tree/main/Lesson%208%20Quizes/TicTacToe) *Created by Mohamed Youssry*
 
 ---
-## Overloading
+## Lesson 9: Overloading
 - With function overloading, multiple functions can have the same name with different parameters:
 ``` c++
 int myFunction(int x)
@@ -168,7 +168,7 @@ double myFunction(double x, double y)
 ```
 
 ---
-## Template
+## Lesson 10: Template
 - A template is a simple and yet very powerful tool in C++. The simple idea is to pass data type as a parameter so that we don’t need to write the same code for different data types. For example, a software company may need sort() for different data types. Rather than writing and maintaining the multiple codes, we can write one sort() and pass data type as a parameter. [^1]
 ```c++
 template <typename T>
@@ -190,7 +190,7 @@ T functionName (U  parameter1, V  parameter2,...)
 }
 ```
 ---
-## Classes and Inheritance
+## Lesson 11: Classes and Inheritance
 *In this lesson we will learn about single and multiple inheritance*
 
 - In C++ we can derive a class from another class, called a base. The derived class can access members and functions of the base class.
@@ -219,4 +219,8 @@ class Pet : public Patient, public Dog
 ```
 
 ---
-## PolyMorphism
+## Lesson 13: Vectors and Iterators
+*vectors are way bettern than arrays*
+
+- 
+
