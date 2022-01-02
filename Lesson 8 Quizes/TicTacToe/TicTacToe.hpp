@@ -85,28 +85,30 @@ int TicTacToe::fourInCol(char value)
 // 03 12 21 30
 int TicTacToe::fourInDiag(char value)
 {
+    int count = 0;
     for (int i = 0; i < 4; i++)
     {
-        int count = 0;
+
         if (gameSpace[i][i] == value)
         {
             count++;
-        }
-        if (count == 4)
-        {
-            return 1;
+            if (count == 4)
+            {
+                return 1;
+            }
         }
     }
+    count = 0;
     for (int i = 0; i < 4; i++)
     {
-        int count = 0;
+
         if (gameSpace[i][3 - i] == value)
         {
             count++;
-        }
-        if (count == 4)
-        {
-            return 1;
+            if (count == 4)
+            {
+                return 1;
+            }
         }
     }
     return 0;

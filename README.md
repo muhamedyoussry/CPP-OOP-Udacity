@@ -158,3 +158,65 @@
 
 [TicTacToe Game](https://github.com/muhamedyoussry/CPP-OOP-Udacity/tree/main/Lesson%208%20Quizes/TicTacToe) *Created by Mohamed Youssry*
 
+---
+## Overloading
+- With function overloading, multiple functions can have the same name with different parameters:
+``` c++
+int myFunction(int x)
+float myFunction(float x)
+double myFunction(double x, double y)
+```
+
+---
+## Template
+- A template is a simple and yet very powerful tool in C++. The simple idea is to pass data type as a parameter so that we don’t need to write the same code for different data types. For example, a software company may need sort() for different data types. Rather than writing and maintaining the multiple codes, we can write one sort() and pass data type as a parameter. [^1]
+```c++
+template <typename T>
+T functionName (T  parameter1,T  parameter2,...)
+{
+    function statements;
+}
+```
+
+[^1]: Templates document from [Geeks for Geeks](https://www.geeksforgeeks.org/templates-cpp/)
+
+- So far we have looked at functions where all the input parameters and return variables are the same type. Now we will look at when the types are different. We will still use the same form, we will just need to tell the compiler that different variable types are allowed.
+
+```c++
+template <typename T, typename U, typename V>
+T functionName (U  parameter1, V  parameter2,...)
+{
+    function statements;
+}
+```
+---
+## Classes and Inheritance
+*In this lesson we will learn about single and multiple inheritance*
+
+- In C++ we can derive a class from another class, called a base. The derived class can access members and functions of the base class.
+<center><img src="https://video.udacity-data.com/topher/2017/May/59133f5d_screen-shot-2017-05-10-at-9.26.51-am/screen-shot-2017-05-10-at-9.26.51-am.png" style="width: 150px;"></center>
+
+- graduate student is a derived class from the student class
+```c++
+//The derived class with Student as base class
+class GradStudent : public Student
+{
+  // the class extra attributes and behaviours added here
+};
+```
+- the derived class can use the attributes and behaviours from the base class.
+- There are three types of access control: public, private, and protected:
+  - Public Inheritance means all public members of the base class are accessible to the derived class
+  - Private Inheritance means all members of the base class are private to the derived class
+  - Protected Inheritance means all members of the base class are protected to the derived class.
+
+- C++ classes when inherit from one class is called *single inheritance* and when inherit from more than one class it is known as *Multiple Inheritance*
+```c++
+class Pet : public Patient, public Dog
+{
+  // Your derived class members here
+};
+```
+
+---
+## PolyMorphism
