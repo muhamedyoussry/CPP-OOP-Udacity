@@ -225,3 +225,8 @@ class Pet : public Patient, public Dog
 - Vectors are more versatile than arrays, and can be resized during runtime. We can also insert elements into a vector
 - `Assign` assign a value to number of vector indicies, `Push_back` to the end of the vector, `Insert` in a specific location in the vector.
 
+--- 
+## Lesson 14: C++ Interview Questions
+
+[24 Essential C++ Interview Questions from Toptal](https://www.toptal.com/c-plus-plus/interview-questions)
+
