@@ -79,4 +79,80 @@ void MyClass::myMethod() {
 ## Constructors
 
 - constructors is a special method that called automatically when an object of a class is created.
-- 
+- Constructors can also take parameters (just like regular functions), which can be useful for setting initial values for attributes.
+```c++
+class Car {        
+  public:          
+    string brand;  
+    string model;  
+    int year;      
+    Car(string x, string y, int z) { // Constructor with parameters
+      brand = x;
+      model = y;
+      year = z;
+    }
+};
+```
+- a constructor does not have a return type.
+- a constructor should be public.
+
+
+---
+## Encabsulation
+- it involves the bundling of data members and functions inside a single class.
+
+<img src="https://cdn.programiz.com/sites/tutorial2program/files/cpp-encapsulation-implementation.png" style="height:200px">
+
+- Encabsulation use setters and getters to deal with private class memebrs.
+- we can add valdiation checks when set values to class members.
+
+
+---
+## Abstraction
+- hiding implementation from user.
+- shows only essential attributes and hides unnecessary information.
+- composed of interface and implementation. we can deal with class using the interface but the complex implementation is hidden from the user.
+- an abstract class is 
+- pure virtual function or abstract function is to make the function mandatory to be overriden; any class that will use the abstract class should provide and override implementation for the pure virtual method.
+
+```c++
+// an abstract class that have one rule
+class A  
+{ 
+  virtual void method() = 0; // this a pure virtual function 
+};
+```
+---
+## Inheritance
+- The capability of a class to derive properties and characteristics from another class.
+  - Sub Class: The class that inherits properties from another class is called Sub class or Derived Class.
+  - Super Class:The class whose properties are inherited by sub class is called Base Class or Super class. 
+
+```c++
+class A
+{ // base, parent, super class
+  // all class member are here
+};
+class B : public A
+{
+  // derived, child, sub class
+  // all class of derived class are here
+};
+```
+- Modes of Inheritance
+  - `Public mode`: If we derive a sub class from a public base class. Then the public member of the base class will become public in the derived class and protected members of the base class will become protected in derived class
+  - `Protected mode`: If we derive a sub class from a Protected base class. Then both public member and protected members of the base class will become protected in derived class.
+  - `Private mode`: If we derive a sub class from a Private base class. Then both public member and protected members of the base class will become Private in derived class. 
+- If we want to add a constructor to our derived class we can use the base class constructor implmenetation to avoid redundency.
+
+```c++
+class A
+{
+  A (int a, int b);
+}; 
+class B : public A
+{
+  B(int a, int b, string x) : A(a, b);
+};
+
+```
