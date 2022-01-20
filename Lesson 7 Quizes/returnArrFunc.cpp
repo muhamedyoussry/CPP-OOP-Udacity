@@ -25,5 +25,6 @@ int main()
     int *p;
     p = ReturnArray();
     PrintArray(p, 3);
+    cout << p[1];
     return 0;
 }

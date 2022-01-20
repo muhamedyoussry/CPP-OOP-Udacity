@@ -15,7 +15,7 @@ void arrayUnSized(int array[], int size);
 int main()
 {
     const int size = 3;
-    int array[size][size] = {{33, 66, 99}, {33, 66, 99}};
+    int array[size] = {33, 66, 99};
     // We are passing a pointer or reference to the array
     // so we will not know the size of the array
     // We have to pass the size to the function as well
@@ -41,15 +41,12 @@ void arraySized(int array[3], int size)
     cout << "\n";
 }
 
-void arrayUnSized(int array[3][3], int size)
+void arrayUnSized(int array[], int size)
 {
     cout << setw(5);
     for (int i = 0; i < size; i++)
     {
-        for (int j = 0; j < size; j++)
-        {
-            cout << array[i][j] << " ";
-        }
+        cout << array[i] << " ";
     }
     cout << "\n";
 }
