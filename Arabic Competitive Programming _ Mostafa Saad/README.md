@@ -6,12 +6,11 @@
 
 <hr>
 
-### My Goals for this Course
+### Objectives From this Repo
 - Master C++ Concepts by practice
 - Master OOP Concepts by practice
 - Design a C++ and OOP reference for me.
 - Give me new ideas for C++, OOP projects.
-- Help me in implementing many projects.
+- Implement many C++ and OOP projects.
 - Increase my technical writing skills in English.
-
 
