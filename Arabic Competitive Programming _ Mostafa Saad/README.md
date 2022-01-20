@@ -1,10 +1,10 @@
 # Object-Oriented Programming in C++, *Fourth Edition , Robert Lafore*
 
-<center><img src="https://www.informit.com/ShowCover.aspx?isbn=0672323087" width ="300"> </center>
+<p align="center"><img src="https://www.informit.com/ShowCover.aspx?isbn=0672323087" width ="300"> </p>
 
-*This will be my first repo of this type, which is a book summary with the questions and exercise solutions.*
+*This will be my first repo of this type, which is a book summary with the questions and exercise solutions. And I will support my reading with some mentor guidance using MOSTAFA SAAD [YouTube Channel](https://www.informit.com/ShowCover.aspx?isbn=0672323087)*
 
-<br>
+<hr>
 
 ### My Goals for this Course
 - Master C++ Concepts by practice
