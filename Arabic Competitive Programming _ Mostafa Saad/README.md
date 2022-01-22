@@ -4,8 +4,6 @@
 
 *This will be my first repo of this type, which is a book summary with the questions and exercise solutions. And I will support my reading with some mentor guidance using MOSTAFA SAAD [YouTube Channel](https://www.informit.com/ShowCover.aspx?isbn=0672323087)*
 
-<hr>
-
 ### Objectives From this Repo
 - Master C++ Concepts by practice
 - Master OOP Concepts by practice
@@ -27,7 +25,7 @@ Three major innovations in programming have been devised to cope with the proble
 
 This book teaches object-oriented programming with the C++ programming language. It also introduces the UML and software development processes.
 
-## Chapter 1: The Big Picture
+# Chapter 1: The Big Picture
 
 #### In This Chapter
 
