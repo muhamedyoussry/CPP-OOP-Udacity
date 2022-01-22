@@ -29,7 +29,7 @@ This book teaches object-oriented programming with the C++ programming language.
 
 <hr>
 
-### Chapter 1: The Big Picture
+## Chapter 1: The Big Picture
 
 #### In This Chapter
 
