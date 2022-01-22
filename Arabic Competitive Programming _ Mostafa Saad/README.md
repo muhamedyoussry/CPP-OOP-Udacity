@@ -16,7 +16,7 @@
 
 <hr>
 
-### Introduction
+## Introduction
 
 As programming projects became large and more complicated, it was found that this approach did not work very well. The problem was complexity.
 
@@ -26,8 +26,6 @@ Three major innovations in programming have been devised to cope with the proble
   - ***Software Development Proces***
 
 This book teaches object-oriented programming with the C++ programming language. It also introduces the UML and software development processes.
-
-<hr>
 
 ## Chapter 1: The Big Picture
 
