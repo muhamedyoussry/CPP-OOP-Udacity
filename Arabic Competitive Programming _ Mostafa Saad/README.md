@@ -56,3 +56,8 @@ The Object-Oriented approach is to combine data and functions that operatoe on t
 
 ## 1.2 Characteristics of Object-Oriented Languages
 
+In object oriented programming you see the world as objects; you think of your program in terms of objects rather than functions such as; human entities, collections of data, componenents in a computer games, or physical objects.
+
+> Object-Oriented Approch offer a revolution in program design.
+
+ 
