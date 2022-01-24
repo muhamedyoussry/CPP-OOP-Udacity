@@ -25,7 +25,7 @@ Three major innovations in programming have been devised to cope with the proble
 
 This book teaches object-oriented programming with the C++ programming language. It also introduces the UML and software development processes.
 
-<p align="center"> <h1> Chapter 1: The Big Picture </h1> </p>
+<h1 align="center"> Chapter 1: The Big Picture </h1>
 
 #### In This Chapter
 
