@@ -21,11 +21,11 @@ As programming projects became large and more complicated, it was found that thi
 Three major innovations in programming have been devised to cope with the problem of complexity. They are
   - ***Object Oriented Programming (OOP)*** it is a programming style that views the program as a group of objects that have certain properties.
   - ***Unified Modeling Language (UML)*** it is a graphical language used to help clarify OOP concepts.
-  - ***Software Development Proces***
+  - ***Software Development Process***
 
 This book teaches object-oriented programming with the C++ programming language. It also introduces the UML and software development processes.
 
-# Chapter 1: The Big Picture
+<p align="center"> <h1> Chapter 1: The Big Picture </h1> </p>
 
 #### In This Chapter
 
@@ -36,3 +36,14 @@ This book teaches object-oriented programming with the C++ programming language.
 5. The Unified Modeling Language (UML)
 
 
+## 1.1 Why Do We Need OOP?
+
+For very small programs, the programmer creates the list of instructions, and the computer carries them out. (*Procedural Programming*)
+
+*Functions* were adopted as a way to make programs more comprehensible to their human creators. *Functions* are list of instructions and we group many functions to build a program. group of functions called *module*.
+
+Dividing a program into functions and modules is one of the cornerstones of *structured programming*
+
+Analyzing the reasons for these failures reveals that there are weaknesses in the procedural paradigm itself. No matter how well the structured programming approach is implemented, large programs become excessively complex.
+
+Procedural programming have two main problems; First, functions have unrestricted access to global data. Second, unrelated functions and data.
