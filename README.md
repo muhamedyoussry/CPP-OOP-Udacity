@@ -11,7 +11,7 @@
 
 <p align="center"> <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/FreeCodeCamp_logo.png" width="400"></p>
 
-## 3. Arabic Competitive Programming
+## 3. Arabic Competitive Programming supported by a Book
 *These will be several courses in C++, OOP, and Competitive Programming provided by MOSTAFA SAAD [YouTube Channel](https://www.youtube.com/channel/UC8OxKsmAyrGAfBiluhpLkbA) and you can see my notes and solutions from my [repo](https://github.com/muhamedyoussry/Object-Oriented-Programming-CPP/tree/main/Arabic%20Competitive%20Programming%20_%20Mostafa%20Saad). Also, this repo has a summarization for "Object-Oriented Programming in C++, Fourth Edition , Robert Lafore" [book](https://faculty.ksu.edu.sa/sites/default/files/ObjectOrientedProgramminginC4thEdition.pdf)*
 
 <p align="center"> <img src="https://www.seekpng.com/png/detail/77-772362_youtube-logo-youtube-logo-png.png" width="400"></p>
