@@ -34,4 +34,3 @@ This book teaches object-oriented programming with the C++ programming language.
 3. C++ and C
 4. Laying the Groundwork
 5. The Unified Modeling Language (UML)
-

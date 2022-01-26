@@ -33,3 +33,22 @@ The Object-Oriented approach is to combine data and functions that operatoe on t
 In object oriented programming you see the world as objects; you think of your program in terms of objects rather than functions such as; human entities, collections of data, componenents in a computer games, or physical objects.
 
 > Object-Oriented Approch offer a revolution in program design.
+
+In OOP we say that objects are members of classes, Classes are a blueprint of objects.
+
+generating a sub-class from a class called inheritance such as veichle class have subclasses like trucks, buses, motorcycles.
+
+One of the benefits of objects is that they give the programmer a convenient way to
+construct new data types.
+
+## 1.3 C++ and C
+
+C++ is derived from the C language. Strictly speaking, it is a superset of C: Almost
+every correct statement in C is also a correct statement in C++, although the reverse is
+not true.
+
+The most important elements added to C to create C++ concern classes,
+objects, and object-oriented programming. (C++ was originally called “C with
+classes.”)
+
+<p align="center"><img src="./CPPandC.png" width ="300"> </p>
