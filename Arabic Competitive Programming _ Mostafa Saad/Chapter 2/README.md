@@ -68,3 +68,25 @@ the **second** directive we used in this program is `using namespace std;`, we u
 ```C++
 std::cout << "Hello World" << std::endl;
 ```
+
+## 2.5 Comments
+
+Comments are an important part of any program. They help the person writing a program, and anyone else who must read the source file, understand what’s going on. The compiler ignores comments, so they do not add to the file size or execution time of the executable program.
+
+Comments start with a double slash symbol (//) and terminate at the end of the line.
+
+```C++
+#include <iostream>
+using namespace std;
+// This is a comment and the compiler will ignore the entire line completly
+
+int main()
+{
+    cout << "Hello World" << endl ;
+    return 0 ;
+}
+```
+
+we use comments to clarify the big picture and reasone behind your code. So, we use it to:
+1. explain the code to our team mates and what you are trying to do.
+2. explain the code to ourselves in future when we forget about the logic behind this.
