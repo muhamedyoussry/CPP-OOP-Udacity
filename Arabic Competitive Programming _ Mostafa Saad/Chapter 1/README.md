@@ -51,4 +51,4 @@ The most important elements added to C to create C++ concern classes,
 objects, and object-oriented programming. (C++ was originally called “C with
 classes.”)
 
-<p align="center"><img src="./CPPandC.png" width ="300"> </p>
+<p align="center"><img src="./CPPandC.png" width ="500"> </p>
