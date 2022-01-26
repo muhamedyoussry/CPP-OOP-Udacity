@@ -2,21 +2,12 @@
 
 #### In This Chapter
 
-1. Getting Started
-2. Basic Program Construction
-3. Output using `cout`
-4. Directives
-5. Comments
-6. Integer Variables
-7. Character Variables
-8. Input with `cin`
-9. Floating Point Types
-10. Type `bool`
-11. The `setw` Manipulator
-12. Variable Type Summary
-13. Type Conversion
-14. Arithmetic Operators
-15. Library Functions
+- [2.1 Getting Started](#21-getting-started)
+- [2.2 Basic Program Construction](#22-basic-program-construction)
+- [2.3 Output using `cout`](#23-output-using-cout)
+- [2.4 Directives](#24-directives)
+- [2.5 Comments](#25-comments)
+- [2.6 Integer Variables](#26-integer-variables)
 
 
 ## 2.1 Getting Started
@@ -90,3 +81,6 @@ int main()
 we use comments to clarify the big picture and reasone behind your code. So, we use it to:
 1. explain the code to our team mates and what you are trying to do.
 2. explain the code to ourselves in future when we forget about the logic behind this.
+
+## 2.6 Integer Variables
+

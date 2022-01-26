@@ -3,11 +3,13 @@
 
 #### In This Chapter
 
-1. Why Do We Need Object-Oriented Programming?
-2. Characteristics of Object-Oriented Languages
-3. C++ and C
-4. Laying the Groundwork
-5. The Unified Modeling Language (UML)
+- [1.1 Why Do We Need OOP?](#11-why-do-we-need-oop)
+- [1.2 Characteristics of Object-Oriented Languages](#12-characteristics-of-object-oriented-languages)
+- [1.3 C++ and C](#13-c-and-c)
+- [1.4 Laying the Groundwork](#14-laying-the-groundwork)
+- [1.5 The Unified Modeling Language (UML)](#15-the-unified-modeling-language-uml)
+- [Summarize in Points](#summarize-in-points)
+- [Questions & Answers](#questions--answers)
 
 
 ## 1.1 Why Do We Need OOP?
