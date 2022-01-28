@@ -3,7 +3,7 @@
 int main()
 {
     TicTacToe t;
-
+    char key;
     string player1;
     string player2;
     cout << "First player name : ";
@@ -28,5 +28,10 @@ int main()
         }
     }
     cout << "Game Ends and Winner is $$ " << opponent[value] << " $$ Player";
+
+    cout << endl
+         << endl
+         << "Press any key then press enter to exit " << endl;
+    cin >> key;
     return 0;
 }

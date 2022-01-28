@@ -2,6 +2,7 @@
 
 int main()
 {
+    char key;
     char player[] = {'#', 'O'};
     char opponent[] = {'O', '#'};
     int turn = 0;
@@ -24,5 +25,9 @@ int main()
     }
 
     cout << "Winner is $$ " << opponent[turn % 2] << " $$ Player" << endl;
+    cout << endl
+         << endl
+         << "Press any key then press enter to exit " << endl;
+    cin >> key;
     return 0;
 }
