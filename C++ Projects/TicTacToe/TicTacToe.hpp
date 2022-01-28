@@ -106,7 +106,7 @@ int TicTacToe::fourInDiag(char value)
     for (int i = 0; i < 3; i++)
     {
 
-        if (gameSpace[i][3 - i] == value)
+        if (gameSpace[i][2 - i] == value)
         {
             count++;
             if (count == 3)

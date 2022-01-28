@@ -12,3 +12,4 @@ Notepad::~Notepad()
 {
     delete ui;
 }
+
