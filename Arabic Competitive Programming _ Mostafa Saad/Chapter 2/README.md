@@ -17,6 +17,9 @@
 - [2.13 Type Conversion](#213-type-conversion)
 - [2.14 Arithmetic Operators](#214-arithmetic-operators)
 - [2.15 Library Functions](#215-library-functions)
+- [Summarize in Points](#summarize-in-points)
+- [Questions and Answers](#questions-and-answers)
+- [Exercises and Solutions](#exercises-and-solutions)
 
 
 ## 2.1 Getting Started
@@ -358,3 +361,73 @@ The decrement operator, `--`, behaves very much like the increment operator, exc
 
 ## 2.15 Library Functions
 
+Many activities in C++ are carried out by library functions. These functions perform file access, mathematical computations, and data conversion, among other things. Like `sqrt()` function that calculate square root of a number and it is included from the `<cmath>` library.
+
+If you don’t include the appropriate header file when you use a library function, you’ll get an error message like this from the compiler: *‘sqrt’ unidentified identifier.*
+
+## Summarize in Points
+
+- We learned about the `main()` function.
+- A function is acomposed of *statements*, every statement end with semicolon `;`.
+- `cout` object and insertion `<<` operator to display information on the screen.
+- `cin` object and extraction operator `>>` to assign some information from the user to a variable.
+- *signed* and *unsigned* versions of different data types.
+-  `const` variables will not the change while program is running.
+-  arithmetic and arithmetic assignments operators.
+-  the linked is used to link the library and header files with the object file and the result is an executable `.exe` file.
+
+## Questions and Answers
+
+1. Dividing a program into functions **makes the program easier to conceptualize and may reduce the size of the program.**
+2. A function name must be followed by **parentheses**.
+3. A function body is delimited by **curly brackets**.
+4. Why is the main() function special? **Because it is the first function to be executed.**
+5. A C++ instruction that tells the computer to do something is called a **statements**.
+6. // This is a comment , /* old fashioned comment */.
+7. An expression **usually evaluates to a numerical value and may be part of a statement.**
+8. Specify how many bytes are occupied by the following data types in a 32-bit system: 
+   1. int: **4 bytes**
+   2. long double: **10 bytes** 
+   3. float: **4 bytes**
+   4. long: **4 bytes**
+9. A variable of type char can hold the value 301. **False**
+10. What kind of program elements are the following?
+    1.  12: **int**
+    2.  ‘a’: **char**
+    3.  4.28915: **float**
+    4.  JungleJim: **variable name**
+    5.  JungleJim(): **function**
+11. Write statements that display on the screen
+    1.  the character ‘x’: `cout << 'x' ;`
+    2.  the name Jim: `cout << "Jim" ;`
+    3.  the number 509: `cout << 509 ;`
+12. True or false: In an assignment statement, the value on the left of the equal sign is always equal to the value on the right. **False**
+13. Write a statement that displays the variable *george* in a field 10 characters wide.
+    1.  `cout << setw(10) << "george" ;`
+14. What header file must you #include with your source file to use cout and cin? `#include <iostream>`
+15. Write a statement that gets a numerical value from the keyboard and places it in the variable `temp`.
+```C++
+int temp= 0 ;
+cin >> temp;
+```
+16. What header file must you #include with your program to use setw? `#include <iomanip>`.
+17. Two exceptions to the rule that the compiler ignores whitespace are **string** and **preprocessor directives**.
+18. True or false: It’s perfectly all right to use variables of different data types in the same arithmetic expression. **True**
+19. The expression 11%3 evaluates to **2**.
+20. An arithmetic assignment operator combines the effect of what two operators? **assignment (=) and arithmetic operation (*,/,+,-)**.
+21. Write a statement that uses an arithmetic assignment operator to increase the value of the variable temp by 23. Write the same statement without the arithmetic assignment operator.
+```C++
+int temp = 0;
+temp += 23 ;        // first solution
+temp = temp + 23 ;  // second solution
+```
+22. The increment operator increases the value of a variable by how much? **by 1**
+23. Assuming var1 starts with the value 20, what will the following code fragment print out?
+```C++
+cout << var1--; // 20
+cout << ++var1; // 20
+```
+24. In the examples we’ve seen so far, header files have been used for what purpose? **to include library functions, overloaded operators, and objects**.
+25. The actual code for library functions is contained in a **library** file.
+
+## Exercises and Solutions
