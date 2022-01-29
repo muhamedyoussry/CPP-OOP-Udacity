@@ -11,6 +11,12 @@
 - [2.7 Character Variables](#27-character-variables)
 - [2.8 Input with `cin`](#28-input-with-cin)
 - [2.9 Floating Point Types](#29-floating-point-types)
+- [2.10 Type `bool`](#210-type-bool)
+- [2.11 The `setw` Manipulator](#211-the-setw-manipulator)
+- [2.12 Variable Type Summary](#212-variable-type-summary)
+- [2.13 Type Conversion](#213-type-conversion)
+- [2.14 Arithmetic Operators](#214-arithmetic-operators)
+- [2.15 Library Functions](#215-library-functions)
 
 
 ## 2.1 Getting Started
@@ -164,3 +170,191 @@ the statement `cin` causes the program to wait for the user to enter a number (b
 <p align="center"><img src="./cin.png" width ="500"> </p>
 
 ## 2.9 Floating Point Types
+
+Floating-point variables represent numbers with a decimal place—like 3.1415927, 0.0000625, and –10.2.
+
+Type float stores numbers in the range of about 3.4x10–38 to 3.4x1038, with a precision of seven digits. It occupies 4 bytes (32 bits) in memory.
+
+```C++
+int main()
+{
+    float rad;                           // variable of type float
+    const float PI = 3.14159F;           // type const float
+    cout << “Enter radius of circle : “; // prompt
+    cin >> rad;                          // get radius
+    float area = PI * rad * rad;         // find area
+    cout << “Area is “ << area << endl;  // display answer
+    return 0;
+}
+```
+
+Type double requires 8 bytes of storage and handles numbers in the range from 1.7x10–308 to 1.7x10308 with a precision of 15 digits.
+
+The *exponent* can be positive or negative. The exponential number 6.35239E–5 is equivalent to 0.0000635239 in decimal notation. This is the same as 6.35239 times 10–5. (*exponential notation*)
+
+The keyword `const` (for constant) precedes the data type of a variable. It specifies that the value of a variable will not change throughout the program. Any attempt to alter the value of a variable defined with this qualifier will elicit an error message from the compiler.
+
+## 2.10 Type `bool`
+
+Variables of type bool can have only two possible values: true and false. In theory a bool type requires only one bit (not byte) of storage, but in practice compilers
+often store them as bytes because a byte can be quickly accessed, while an individual bit must be extracted from a byte, which requires additional time.
+
+> Type bool gets its name from *George Boole*, a 19th century English mathematician who invented the concept of using logical operators with true-or-false values. Thus such true/false values are often called Boolean values.
+
+## 2.11 The `setw` Manipulator
+
+We’ve mentioned that manipulators are operators used with the insertion operator (<<) to modify or manipulate the way data is displayed.
+
+`setw` changes the field width of output.
+
+```C++
+// width2.cpp
+// demonstrates setw manipulator
+#include <iostream>
+#include <iomanip> // for setw [Input Output Manipulator]
+using namespace std;
+int main()
+{
+    long pop1 = 2425785, pop2 = 47, pop3 = 9761;
+    cout << setw(8) << "LOCATION" << setw(15)
+         << "POPULATION" << endl
+         << setw(8) << "Portcity" << setw(15) << pop1 << endl
+         << setw(8) << "Hightown" << setw(15) << pop2 << endl
+         << setw(8) << "Lowville" << setw(15) << pop3 << endl;
+    return 0;
+}
+```
+width2.cpp result
+```
+LOCATION     POPULATION
+Portcity        2425785
+Hightown             47
+Lowville           9761
+```
+
+## 2.12 Variable Type Summary
+
+<p align="center"><img src="./table1.png" width ="500"> </p>
+
+<p align="center"><img src="./table2.png" width ="500"> </p>
+
+<p align="center"><img src="./table3.png" width ="500"> </p>
+
+## 2.13 Type Conversion
+
+ ```C++
+ // mixed.cpp
+// shows mixed expressions
+#include <iostream>
+using namespace std;
+int main()
+{
+    int count = 7;
+    float avgWeight = 155.5F;
+    double totalWeight = count * avgWeight;
+    cout << "totalWeight =" << totalWeight << endl;
+    return 0;
+}
+```
+result
+```
+totalWeight =1088.5
+```
+
+<p align="center"><img src="./dataconversion.png" width ="500"> </p>
+
+*Casting* is to change data type manually. Here’s a statement that uses a C++ cast to change a variable of type int into a variable of type char:
+
+```c++
+aCharVar = char(anIntVar);
+```
+
+## 2.14 Arithmetic Operators
+
+As you have probably gathered by this time, C++ uses the four normal arithmetic operators +, -, *, and / for addition, subtraction, multiplication, and division.
+
+*Remainder operator* (%) works only with integer variables (types char, short, int, and long). This operator (also called the *modulus operator*) finds the remainder when one number is divided by another. The REMAIND program demonstrates the effect.
+
+
+```C++
+// remaind.cpp
+// demonstrates remainder operator
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << 6 % 8 << endl   // 6
+         << 7 % 8 << endl   // 7
+         << 8 % 8 << endl   // 0
+         << 9 % 8 << endl   // 1
+         << 10 % 8 << endl; // 2
+    return 0;
+}
+```
+C++ offers several ways to shorten and clarify your code. One of these is the arithmetic *assignment operator*.
+
+```C++
+// assign.cpp
+// demonstrates arithmetic assignment operators
+#include <iostream>
+using namespace std;
+int main()
+{
+    int ans = 27;
+    ans += 10; // same as: ans = ans + 10;
+    cout << ans << ", ";
+    ans -= 7; // same as: ans = ans - 7;
+    cout << ans << ", ";
+    ans *= 2; // same as: ans = ans * 2;
+    cout << ans << ", ";
+    ans /= 3; // same as: ans = ans / 3;
+    cout << ans << ", ";
+    ans %= 3; // same as: ans = ans % 3;
+    cout << ans << endl;
+    return 0;
+}
+
+```
+Here’s the output from this program : 
+
+```
+37, 30, 60, 20, 2
+```
+You don’t need to use arithmetic assignment operators in your code, but they are a common feature of the language; they’ll appear in numerous examples in this book.
+
+Here’s an even more specialized operator. You often need to add 1 to the value of an existing variable.
+
+```C++
+int count = 0 ;
+count++ ; // increase the count value by 1
+```
+Also, it can be used as *prefix* `++count` or *postfix* `count++`. Often a variable is incremented within a statement that performs some other operation on it. For example
+
+```C++
+totalWeight = avgWeight * ++count;
+```
+In this case count is incremented first. How do we know that? Because *prefix* notation is used: `++count`. If we had used *postfix* notation, `count++`, the multiplication would have been performed first, then count would have been incremented.
+
+<p align="center"><img src="./postandpre.png" width ="500"> </p>
+
+```C++
+// increm.cpp
+// demonstrates the increment operator
+#include <iostream>
+using namespace std;
+int main()
+{
+    int count = 10;
+    cout << "count =" << count << endl;   // displays 10
+    cout << "count =" << ++count << endl; // displays 11 (prefix)
+    cout << "count =" << count << endl;   // displays 11
+    cout << "count =" << count++ << endl; // displays 11 (postfix)
+    cout << "count =" << count << endl;   // displays 12
+    return 0;
+}
+```
+
+The decrement operator, `--`, behaves very much like the increment operator, except that it subtracts 1 from its operand. It too can be used in both *prefix* and *postfix* forms.
+
+## 2.15 Library Functions
+
