@@ -431,3 +431,22 @@ cout << ++var1; // 20
 25. The actual code for library functions is contained in a **library** file.
 
 ## Exercises and Solutions
+
+1. Assuming there are 7.481 gallons in a cubic foot, write a program that asks the user to enter a number of gallons, and then displays the equivalent in cubic feet. [solution](./exercises/gallons.cpp)
+2. Write a program that generates the following table:
+1990 135
+1991 7290
+1992 11300
+1993 16200
+Use a single cout statement for all output. [solution](exercises/table.cpp)
+3. Write a program that generates the following output:
+10
+20
+19
+Use an integer constant for the 10, an arithmetic assignment operator to generate the 20, and a decrement operator to generate the 19. [solution](./exercises/arithmeticAssignment.cpp)
+4. Write a program that displays your favorite poem. Use an appropriate escape sequence for the line breaks. If you don’t have a favorite poem, you can borrow this one by Ogden Nash:
+Candy is dandy,
+But liquor is quicker. [solution](./exercises/escapeOperator.cpp)
+5. A library function, islower(), takes a single character (a letter) as an argument and returns a nonzero integer if the letter is lowercase, or zero if it is uppercase. This function requires the header file CTYPE.H. Write a program that allows the user to enter a letter, and then displays either zero or nonzero, depending on whether a lowercase or uppercase letter was entered. [solution](exercises/islower().cpp)
+6. On a certain day the British pound was equivalent to $1.487 U.S., the French franc was $0.172, the German deutschemark was $0.584, and the Japanese yen was $0.00955. Write a program that allows the user to enter an amount in dollars, and then displays this value converted to these four other monetary units. [solution](exercises/convertDollars.cpp)
+7. 
