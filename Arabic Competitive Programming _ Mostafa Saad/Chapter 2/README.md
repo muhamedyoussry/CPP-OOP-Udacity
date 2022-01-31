@@ -449,4 +449,13 @@ Candy is dandy,
 But liquor is quicker. [solution](./exercises/escapeOperator.cpp)
 5. A library function, islower(), takes a single character (a letter) as an argument and returns a nonzero integer if the letter is lowercase, or zero if it is uppercase. This function requires the header file CTYPE.H. Write a program that allows the user to enter a letter, and then displays either zero or nonzero, depending on whether a lowercase or uppercase letter was entered. [solution](exercises/islower().cpp)
 6. On a certain day the British pound was equivalent to $1.487 U.S., the French franc was $0.172, the German deutschemark was $0.584, and the Japanese yen was $0.00955. Write a program that allows the user to enter an amount in dollars, and then displays this value converted to these four other monetary units. [solution](exercises/convertDollars.cpp)
-7. 
+7. You can convert temperature from degrees Celsius to degrees Fahrenheit by multiplying by 9/5 and adding 32. Write a program that allows the user to enter a floating-point number representing degrees Celsius, and then displays the corresponding degrees Fahrenheit. [solution](exercises/fahrenheit.cpp)
+8.  When a value is smaller than a field specified with setw(), the unused locations are, by default, filled in with spaces. The manipulator setfill() takes a single character as an argument and causes this character to be substituted for spaces in the empty parts of a field. Rewrite the WIDTH program so that the characters on each line between the location
+name and the population number are filled in with periods instead of spaces, as in
+Portcity.....2425785 [solution](exercises/setw.cpp)
+9. If you have two fractions, a/b and c/d, their sum can be obtained from the formula: [solution](exercises/fractionsSum.cpp)
+```
+sum = (a*d + b*c) / (b*d)
+```
+10. In the heyday of the British empire, Great Britain used a monetary system based on pounds, shillings, and pence. There were 20 shillings to a pound, and 12 pence to a shilling. The notation for this old system used the pound sign, £, and two decimal points, so that, for example, £5.2.8 meant 5 pounds, 2 shillings, and 8 pence. (Pence is the plural of penny.) The new monetary system, introduced in the 1950s, consists of only pounds and pence, with 100 pence to a pound (like U.S. dollars and cents). We’ll call this new system decimal pounds. Thus £5.2.8 in the old notation is £5.13 in decimal pounds (actually £5.1333333). Write a program to convert the old pounds-shillings-pence format to decimal pounds. [solution](exercises/decimalPounds.cpp)
+11. 
