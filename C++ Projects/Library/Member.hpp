@@ -25,7 +25,7 @@ public:
     void print_info();
     void update_member_info();
     void new_member();
-    int get_library_id();
+    int get_member_id();
 };
 
 int Member::library_id_counter = 0;
@@ -65,7 +65,7 @@ void Member::new_member()
     cin >> phone_number;
 }
 
-int Member::get_library_id()
+int Member::get_member_id()
 {
     return library_id;
 }

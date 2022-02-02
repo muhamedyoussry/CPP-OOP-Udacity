@@ -37,8 +37,9 @@ public:
     Book(string book_name, string author_name, double price, int book_copies, string book_publisher, string ISBN);
     void print_book_details();
     void new_book();
-    void update_book_copies(int new_copies_number);
-    void update_price(double new_price);
+    void update_book_copies();
+    void update_price();
+    string get_book_ISBN();
 };
 
 Book::Book()
@@ -88,13 +89,19 @@ void Book::new_book()
     cin >> ISBN;
 }
 
-void Book::update_book_copies(int new_copies_number)
+void Book::update_book_copies()
 {
-    this->book_copies = new_copies_number;
+    cout << "Enter New Copies Number: ";
+    cin >> book_copies;
 }
 
-void Book::update_price(double new_price)
+void Book::update_price()
 {
-    this->price = new_price;
+    cout << "Enter New Price: ";
+    cin >> price;
+}
+string Book::get_book_ISBN()
+{
+    return ISBN;
 }
 #endif
