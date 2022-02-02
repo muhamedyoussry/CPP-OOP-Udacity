@@ -23,6 +23,7 @@ public:
     void print_all_members();
     void print_id_member(int search_id);
     void update_library_member(int member_id);
+    void delete_library_member(int member_id);
     // Books Functions
     void print_all_books();
     void print_ISBN_book(string search_ISBN);
@@ -44,15 +45,15 @@ void Library::library_main_window()
     cout << "1. Enter New Library Member" << endl;
     cout << "2. Print All Library Members Information" << endl;
     cout << "3. Search for Specific Library Member Information" << endl;
+    cout << "4. Delete Library Member Information" << endl;
     cout << "________ Library Books Management System ________" << endl;
-    cout << "4. Enter New Book" << endl;
-    cout << "5. Print All Library Books Information" << endl;
-    cout << "6. Search for Specific Library Book Information" << endl;
+    cout << "5. Enter New Book" << endl;
+    cout << "6. Print All Library Books Information" << endl;
+    cout << "7. Search for Specific Library Book Information" << endl;
     cout << "0. Exit Library" << endl;
     cout << endl
          << "Enter Your Choice: ";
     cin >> choice;
-    cout << endl;
 
     if (choice == 1)
     {
@@ -93,17 +94,26 @@ void Library::library_main_window()
     }
     else if (choice == 4)
     {
+        int member_id;
+        cout << "Delete Member by ID: ";
+        cin >> member_id;
+        delete_library_member(member_id);
+        cout << "Member Deleted Succesfully" << endl;
+        library_main_window();
+    }
+    else if (choice == 5)
+    {
         Book b;
         b.new_book();
         book_list.push_back(b);
         library_main_window();
     }
-    else if (choice == 5)
+    else if (choice == 6)
     {
         print_all_books();
         library_main_window();
     }
-    else if (choice == 6)
+    else if (choice == 7)
     {
         string search_ISBN;
         cout << "Search by Book ISBN: ";
@@ -232,6 +242,22 @@ void Library::update_library_book_copies(string book_ISBN)
         if (it->get_book_ISBN() == book_ISBN)
         {
             it->update_book_copies();
+            return;
+        }
+        else
+        {
+            continue;
+        }
+    }
+}
+
+void Library::delete_library_member(int member_id)
+{
+    for (auto it = member_list.begin(); it != member_list.end(); it++)
+    {
+        if (it->get_member_id() == member_id)
+        {
+            member_list.erase(it);
             return;
         }
         else

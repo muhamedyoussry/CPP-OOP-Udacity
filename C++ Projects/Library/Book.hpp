@@ -75,19 +75,22 @@ void Book::print_book_details()
 
 void Book::new_book()
 {
-    // TO DO: having an error for getline function is not working properly.
     cout << "Enter Book Name: ";
+    cin.ignore();
     getline(cin, book_name);
     cout << "Enter Book Author Name: ";
+    cin.ignore();
     getline(cin, author_name);
     cout << "Enter Book Price: ";
     cin >> price;
     cout << "Enter Book Copies: ";
     cin >> book_copies;
     cout << "Enter Book Publisher Name: ";
+    cin.ignore();
     getline(cin, book_publisher);
     cout << "Enter Book ISBN: ";
-    cin >> ISBN;
+    cin.ignore();
+    getline(cin, ISBN);
 }
 
 void Book::update_book_copies()
