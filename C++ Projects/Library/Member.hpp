@@ -3,8 +3,8 @@
 #ifndef MEMBER_H
 #define MEMBER_H
 
-#include <iostream>
-#include <iomanip>
+#include <bits/stdc++.h>
+
 #include "Person.hpp"
 #include "Borrowed_Books.hpp"
 

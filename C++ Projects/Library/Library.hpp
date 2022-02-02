@@ -3,8 +3,8 @@
 #ifndef LIBRARY_H
 #define LIBRARY_H
 
-#include <iostream>
-#include <vector>
+#include <bits/stdc++.h>
+
 #include "Book.hpp"
 #include "Member.hpp"
 

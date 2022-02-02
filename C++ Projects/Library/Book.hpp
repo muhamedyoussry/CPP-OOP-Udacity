@@ -3,9 +3,7 @@
 #ifndef BOOK_H
 #define BOOK_H
 
-#include <iostream>
-#include <vector>
-#include <iomanip>
+#include <bits/stdc++.h>
 
 #include "Member.hpp"
 
@@ -64,27 +62,30 @@ Book::Book(string book_name, string author_name, double price, int book_copies, 
 // print all the information of a book.
 void Book::print_book_details()
 {
-    cout << "______ Book Details ______" << endl;
-    cout << left << setw(15) << "Book Name: " << setw(15) << right << book_name << endl;
-    cout << left << setw(15) << "Author Name: " << setw(15) << right << author_name << endl;
-    cout << left << setw(15) << "price: " << setw(15) << right << price << endl;
-    cout << left << setw(15) << "Book Available Copies: " << setw(15) << right << book_copies << endl;
-    cout << left << setw(15) << "Book Publisher: " << setw(15) << right << book_publisher << endl;
-    cout << left << setw(15) << "ISBN: " << setw(15) << right << ISBN << endl;
+    cout << "______ Book with ISBN \"" << ISBN << "\" Information ______" << endl;
+    cout << left << setw(15) << "Book Name: " << setw(50) << right << book_name << endl;
+    cout << left << setw(15) << "Author Name: " << setw(50) << right << author_name << endl;
+    cout << left << setw(15) << "Price: " << setw(50) << right << price << endl;
+    cout << left << setw(15) << "Copies Number: " << setw(50) << right << book_copies << endl;
+    cout << left << setw(15) << "Book Publisher: " << setw(50) << right << book_publisher << endl;
+    cout << left << setw(15) << "Book ISBN: " << setw(50) << right << ISBN << endl;
+
+    cout << endl;
 }
 
 void Book::new_book()
 {
+    // TO DO: having an error for getline function is not working properly.
     cout << "Enter Book Name: ";
-    cin >> book_name;
+    getline(cin, book_name);
     cout << "Enter Book Author Name: ";
-    cin >> author_name;
+    getline(cin, author_name);
     cout << "Enter Book Price: ";
     cin >> price;
     cout << "Enter Book Copies: ";
     cin >> book_copies;
     cout << "Enter Book Publisher Name: ";
-    cin >> book_publisher;
+    getline(cin, book_publisher);
     cout << "Enter Book ISBN: ";
     cin >> ISBN;
 }
