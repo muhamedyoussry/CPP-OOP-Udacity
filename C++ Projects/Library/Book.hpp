@@ -33,10 +33,23 @@ private:
     vector<Member> book_borrower;
 
 public:
+    Book();
     Book(string book_name, string author_name, double price, int book_copies, string book_publisher, string ISBN);
     void print_book_details();
+    void new_book();
+    void update_book_copies(int new_copies_number);
+    void update_price(double new_price);
 };
 
+Book::Book()
+{
+    this->book_name = "Unknown";
+    this->author_name = "Unknown";
+    this->price = 0;
+    this->book_copies = 0;
+    this->book_publisher = "Unknown";
+    this->ISBN = "Unknown";
+}
 Book::Book(string book_name, string author_name, double price, int book_copies, string book_publisher, string ISBN)
 {
     this->book_name = book_name;
@@ -59,4 +72,29 @@ void Book::print_book_details()
     cout << left << setw(15) << "ISBN: " << setw(15) << right << ISBN << endl;
 }
 
+void Book::new_book()
+{
+    cout << "Enter Book Name: ";
+    cin >> book_name;
+    cout << "Enter Book Author Name: ";
+    cin >> author_name;
+    cout << "Enter Book Price: ";
+    cin >> price;
+    cout << "Enter Book Copies: ";
+    cin >> book_copies;
+    cout << "Enter Book Publisher Name: ";
+    cin >> book_publisher;
+    cout << "Enter Book ISBN: ";
+    cin >> ISBN;
+}
+
+void Book::update_book_copies(int new_copies_number)
+{
+    this->book_copies = new_copies_number;
+}
+
+void Book::update_price(double new_price)
+{
+    this->price = new_price;
+}
 #endif

@@ -15,32 +15,34 @@ const int MAX_BOOKS_TO_BORROW = 5;
 class Member : public Person
 {
 protected:
-    string library_id;
+    static int library_id_counter;
+    int library_id;
     string phone_number;
 
 public:
     Member();
-    Member(string first_name, string last_name, int age, string library_id, string phone_number);
+    Member(string first_name, string last_name, int age, string phone_number);
     void print_info();
-    void update_library_id(string updated_library_id);
-    void update_phone_number(string new_phone_numbe);
-    void update_age(int age);
+    void update_member_info();
     void new_member();
+    int get_library_id();
 };
+
+int Member::library_id_counter = 0;
+
 Member::Member() : Person()
 {
-    this->library_id = "Unknown";
     this->phone_number = "Unknown";
 }
-Member::Member(string first_name, string last_name, int age, string library_id, string phone_number) : Person(first_name, last_name, age)
+Member::Member(string first_name, string last_name, int age, string phone_number) : Person(first_name, last_name, age)
 {
-    this->library_id = library_id;
+    this->library_id = ++library_id_counter;
     this->phone_number = phone_number;
 }
 
 void Member::print_info()
 {
-    cout << "______ Member with ID \" " << library_id << " \" Information ______" << endl;
+    cout << "______ Member with ID \"" << library_id << "\" Information ______" << endl;
     cout << left << setw(15) << "First Name: " << setw(15) << right << first_name << endl;
     cout << left << setw(15) << "Last Name: " << setw(15) << right << last_name << endl;
     cout << left << setw(15) << "Age: " << setw(15) << right << age << endl;
@@ -49,24 +51,30 @@ void Member::print_info()
     cout << endl;
 }
 
-void Member::update_library_id(string new_library_id)
-{
-    library_id = new_library_id;
-}
-void Member::update_phone_number(string new_phone_number)
-{
-    phone_number = new_phone_number;
-}
-void Member::update_age(int new_age)
-{
-    age = new_age;
-}
-
 void Member::new_member()
 {
     cout << "Enter Member First Name: ";
     cin >> first_name;
     cout << "Enter Member Last Name: ";
     cin >> last_name;
+    cout << "Enter Member Age: ";
+    cin >> age;
+    this->library_id = ++library_id_counter;
+    cout << "Member Library ID: " << library_id << endl;
+    cout << "Enter Member Phone Number: ";
+    cin >> phone_number;
+}
+
+int Member::get_library_id()
+{
+    return library_id;
+}
+
+void Member::update_member_info()
+{
+    cout << "Enter Member updated Age: ";
+    cin >> age;
+    cout << "Enter Member updated Phone Number: ";
+    cin >> phone_number;
 }
 #endif
