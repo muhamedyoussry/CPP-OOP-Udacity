@@ -4,12 +4,12 @@
 
 <table >
 <tr>
-    <th>Project Number</th>
-    <th>Project Name</th>
-    <th>Project Level</th>
-    <th>Project Concepts</th>
-    <th>Repo</th>
-    <th>Other Info</th>
+    <th width="30 px">Project Number</th>
+    <th width="200 px">Project Name</th>
+    <th width="50 px">Project Level</th>
+    <th width="80 px">Project Concepts</th>
+    <th width="50 px">Repo</th>
+    <th width="250 px">Other Info</th>
 </tr>
 <tr>
     <td>1</td>
