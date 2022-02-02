@@ -2,6 +2,33 @@
 
 *Created by: Mohamed Youssry*
 
+<table broder="1">
+<tr>
+    <th>Project Number</th>
+    <th>Project Name</th>
+    <th>Project Level</th>
+    <th>Project Concepts</th>
+    <th>Repo</th>
+    <th>Other Info</th>
+</tr>
+<tr>
+    <td>1</td>
+    <td>TicTacToe Game</td>
+    <td>Easy</td>
+    <td>C++, OOP</td>
+    <td><a href = "./TicTacToe"> Repo </a> </td>
+    <td><img src="https://miro.medium.com/max/1400/1*gYYWXxLr7k4_RlIwkM1Bnw.png"></td>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+
 <h2 align="center"> Project 1. TicTacToe Game </h2>
 
 - level: Easy
