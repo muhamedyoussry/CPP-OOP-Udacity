@@ -2,7 +2,7 @@
 
 *Created by: Mohamed Youssry*
 
-<table style="border: 1px solid black; width: 100%;">
+<table >
 <tr>
     <th>Project Number</th>
     <th>Project Name</th>
@@ -17,7 +17,7 @@
     <td>Easy</td>
     <td>C++, OOP</td>
     <td><a href = "./TicTacToe"> Repo </a> </td>
-    <td><img src="https://miro.medium.com/max/1400/1*gYYWXxLr7k4_RlIwkM1Bnw.png" style="width:100px"></td>
+    <td><img src="https://miro.medium.com/max/1400/1*gYYWXxLr7k4_RlIwkM1Bnw.png" style="width:200px"></td>
 </tr>
 </table>
 
