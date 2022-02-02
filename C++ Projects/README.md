@@ -2,7 +2,7 @@
 
 *Created by: Mohamed Youssry*
 
-<table style="border: 1px; width:100%;">
+<table style="border: 1px solid black; width: 100%;">
 <tr>
     <th>Project Number</th>
     <th>Project Name</th>
