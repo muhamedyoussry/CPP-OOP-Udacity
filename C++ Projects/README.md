@@ -4,8 +4,8 @@
 
 <table >
 <tr>
-    <th width="30 px">Project Number</th>
-    <th width="200 px">Project Name</th>
+    <th width="30">Project Number</th>
+    <th width="200">Project Name</th>
     <th width="50 px">Project Level</th>
     <th width="80 px">Project Concepts</th>
     <th width="50 px">Repo</th>
