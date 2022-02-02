@@ -22,6 +22,6 @@
 
 - level: Medium
 - Concepts: C++, OOP
-- Code: [Repo](/.Library)
+- Code: [Repo](./Library)
 
 <p align="center"><img src="https://cdn.britannica.com/q:60/92/216092-050-4B31C2B7/custom-library.jpg" style="width: 400px;"></p>
