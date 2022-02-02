@@ -17,7 +17,7 @@
     <td>Easy</td>
     <td>C++, OOP</td>
     <td><a href = "./TicTacToe"> Repo </a> </td>
-    <td><img src="https://miro.medium.com/max/1400/1*gYYWXxLr7k4_RlIwkM1Bnw.png"></td>
+    <td><img src="https://miro.medium.com/max/1400/1*gYYWXxLr7k4_RlIwkM1Bnw.png" style="width:100px"></td>
 </tr>
 </table>
 
