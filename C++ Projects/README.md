@@ -2,14 +2,14 @@
 
 *Created by: Mohamed Youssry*
 
-<table >
+<table>
 <tr>
     <th width="30px">Project Number</th>
     <th width="200px">Project Name</th>
-    <th width="50px">Project Level</th>
-    <th width="80px">Project Concepts</th>
+    <th width="100px">Project Level</th>
+    <th width="200px">Project Concepts</th>
     <th width="50px">Repo</th>
-    <th width="250px">Other Info</th>
+    <th width="350px">Other Info</th>
 </tr>
 <tr>
     <td>1</td>
@@ -17,7 +17,7 @@
     <td>Easy</td>
     <td>C++, OOP</td>
     <td><a href = "./TicTacToe"> Repo </a> </td>
-    <td><img src="https://miro.medium.com/max/1400/1*gYYWXxLr7k4_RlIwkM1Bnw.png" style="width:300px"></td>
+    <td><img src="https://miro.medium.com/max/1400/1*gYYWXxLr7k4_RlIwkM1Bnw.png" ></td>
 </tr>
 </table>
 
