@@ -55,3 +55,15 @@ This book teaches object-oriented programming with the C++ programming language.
 13. Type Conversion
 14. Arithmetic Operators
 15. Library Functions
+
+
+<h1 align="center"> Chapter 3: Loops and Decisions </h1>
+
+#### In This [Chapter](Chapter%203/README.md)
+
+1. Relational Operators
+2. Loops
+3. Decisions
+4. Logical Operators
+5. Precedence Summary
+6. Other Control Statements
