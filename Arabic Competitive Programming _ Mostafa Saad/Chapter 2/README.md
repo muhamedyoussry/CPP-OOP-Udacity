@@ -458,4 +458,4 @@ Portcity.....2425785 [solution](exercises/setw.cpp)
 sum = (a*d + b*c) / (b*d)
 ```
 10. In the heyday of the British empire, Great Britain used a monetary system based on pounds, shillings, and pence. There were 20 shillings to a pound, and 12 pence to a shilling. The notation for this old system used the pound sign, £, and two decimal points, so that, for example, £5.2.8 meant 5 pounds, 2 shillings, and 8 pence. (Pence is the plural of penny.) The new monetary system, introduced in the 1950s, consists of only pounds and pence, with 100 pence to a pound (like U.S. dollars and cents). We’ll call this new system decimal pounds. Thus £5.2.8 in the old notation is £5.13 in decimal pounds (actually £5.1333333). Write a program to convert the old pounds-shillings-pence format to decimal pounds. [solution](exercises/decimalPounds.cpp)
-11. 
+11. By default, output is right-justified in its field. You can left-justify text output using the manipulator setiosflags(ios::left). (For now, don’t worry about what this new notation means.) Use this manipulator, along with setw(). [solution](./exercises/lefJustified.cpp)
