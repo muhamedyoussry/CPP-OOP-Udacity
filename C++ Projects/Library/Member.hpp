@@ -15,6 +15,7 @@ private:
     static int library_id_counter;
     int library_id;
     string phone_number;
+    vector<Book> purchase_history;
 
 public:
     Member();
@@ -23,6 +24,7 @@ public:
     void update_member_info();
     void new_member();
     int get_member_id();
+    void purchase_book(Book b);
 };
 
 int Member::library_id_counter = 0;
@@ -75,4 +77,8 @@ void Member::update_member_info()
     cin >> phone_number;
 }
 
+void Member::purchase_book(Book b)
+{
+    purchase_history.push_back(b);
+}
 #endif

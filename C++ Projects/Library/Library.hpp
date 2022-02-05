@@ -5,7 +5,6 @@
 
 #include <bits/stdc++.h>
 
-#include "Book.hpp"
 #include "Member.hpp"
 
 using namespace std;
@@ -24,12 +23,16 @@ public:
     void print_id_member(int search_id);
     void update_library_member(int member_id);
     void delete_library_member(int member_id);
+    int get_member_position_in_member_list(int member_id);
     // Books Functions
     void print_all_books();
     void print_ISBN_book(string search_ISBN);
     void update_library_book_price(string book_ISBN);
     void update_library_book_copies(string book_ISBN);
     void delete_library_book(string book_ISBN);
+    int get_book_position_in_book_list(string book_ISBN);
+    // Members and Books Functions
+    void member_purchase_book();
 };
 
 Library::Library()
@@ -52,6 +55,8 @@ void Library::library_main_window()
     cout << "6. Print All Library Books Information" << endl;
     cout << "7. Search for Specific Library Book Information" << endl;
     cout << "8. Delete Library Book Information" << endl;
+    cout << "________ Library Purchase Management System ________" << endl;
+    cout << "9. Book Purchase Process" << endl;
     cout << "0. Exit Library" << endl;
     cout << endl
          << "Enter Your Choice: ";
@@ -156,6 +161,11 @@ void Library::library_main_window()
         cout << "Book Deleted Succesfully" << endl;
         library_main_window();
     }
+    else if (choice == 9)
+    {
+        member_purchase_book();
+        library_main_window();
+    }
     else if (choice == 0)
     {
         cout << "_________________________________ GOODBYE _________________________________" << endl
@@ -209,7 +219,6 @@ void Library::print_all_books()
     for (auto it = book_list.begin(); it != book_list.end(); it++)
     {
         it->print_book_details();
-        return;
     }
 }
 
@@ -291,6 +300,59 @@ void Library::delete_library_book(string book_ISBN)
             continue;
         }
     }
+}
+
+int Library::get_member_position_in_member_list(int member_id)
+{
+    for (int i = 0; i < member_list.size(); i++)
+    {
+        if (member_list[i].get_member_id() == member_id)
+        {
+            return i;
+        }
+        else
+        {
+            continue;
+        }
+    }
+    cout << "This Member ID is not exist in our Database" << endl;
+    return -1;
+}
+
+int Library::get_book_position_in_book_list(string book_ISBN)
+{
+    for (int i = 0; i < book_list.size(); i++)
+    {
+        if (book_list[i].get_book_ISBN() == book_ISBN)
+        {
+            return i;
+        }
+        else
+        {
+            continue;
+        }
+    }
+    cout << "This ISBN is not exist in our Database" << endl;
+    return -1;
+}
+
+void Library::member_purchase_book()
+{
+    int member_id;
+    cout << "Enter Member ID: ";
+    cin >> member_id;
+    int member_pos = get_member_position_in_member_list(member_id);
+
+    string book_ISBN;
+    cout << "Enter Book ISBN: ";
+    cin >> book_ISBN;
+    int book_pos = get_book_position_in_book_list(book_ISBN);
+
+    member_list[member_pos].purchase_book(book_list[book_pos]);
+
+    int decrement_copies = book_list[book_pos].get_book_copies();
+    decrement_copies--;
+    book_list[book_pos].update_book_copies(decrement_copies);
 }
 
 #endif

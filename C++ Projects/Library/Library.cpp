@@ -6,4 +6,3 @@ int main()
     lib.library_main_window();
     return 0;
 }
-

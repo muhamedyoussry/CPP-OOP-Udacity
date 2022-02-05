@@ -5,8 +5,6 @@
 
 #include <bits/stdc++.h>
 
-#include "Member.hpp"
-
 using namespace std;
 
 class Book
@@ -28,7 +26,6 @@ private:
     int book_copies;
     string book_publisher;
     string ISBN;
-    vector<Member> book_borrower;
 
 public:
     Book();
@@ -36,8 +33,10 @@ public:
     void print_book_details();
     void new_book();
     void update_book_copies();
+    void update_book_copies(int new_copies);
     void update_price();
     string get_book_ISBN();
+    int get_book_copies();
 };
 
 Book::Book()
@@ -99,6 +98,11 @@ void Book::update_book_copies()
     cin >> book_copies;
 }
 
+void Book::update_book_copies(int new_copies)
+{
+    book_copies = new_copies;
+}
+
 void Book::update_price()
 {
     cout << "Enter New Price: ";
@@ -109,4 +113,8 @@ string Book::get_book_ISBN()
     return ISBN;
 }
 
+int Book::get_book_copies()
+{
+    return book_copies;
+}
 #endif
