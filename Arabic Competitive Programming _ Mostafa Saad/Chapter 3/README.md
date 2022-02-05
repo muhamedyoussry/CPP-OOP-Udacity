@@ -1,4 +1,4 @@
-<h1 align="center"> Chapter 2: C++ Programming Basics </h1>
+<h1 align="center"> Chapter 3: Loops and Decisions </h1>
 
 #### In This Chapter
 

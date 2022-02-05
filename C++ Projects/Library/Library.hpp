@@ -29,6 +29,7 @@ public:
     void print_ISBN_book(string search_ISBN);
     void update_library_book_price(string book_ISBN);
     void update_library_book_copies(string book_ISBN);
+    void delete_library_book(string book_ISBN);
 };
 
 Library::Library()
@@ -50,6 +51,7 @@ void Library::library_main_window()
     cout << "5. Enter New Book" << endl;
     cout << "6. Print All Library Books Information" << endl;
     cout << "7. Search for Specific Library Book Information" << endl;
+    cout << "8. Delete Library Book Information" << endl;
     cout << "0. Exit Library" << endl;
     cout << endl
          << "Enter Your Choice: ";
@@ -145,7 +147,15 @@ void Library::library_main_window()
             library_main_window();
         }
     }
-
+    else if (choice == 8)
+    {
+        string book_ISBN;
+        cout << "Delete Book by ISBN: ";
+        cin >> book_ISBN;
+        delete_library_book(book_ISBN);
+        cout << "Book Deleted Succesfully" << endl;
+        library_main_window();
+    }
     else if (choice == 0)
     {
         cout << "_________________________________ GOODBYE _________________________________" << endl
@@ -258,6 +268,22 @@ void Library::delete_library_member(int member_id)
         if (it->get_member_id() == member_id)
         {
             member_list.erase(it);
+            return;
+        }
+        else
+        {
+            continue;
+        }
+    }
+}
+
+void Library::delete_library_book(string book_ISBN)
+{
+    for (auto it = book_list.begin(); it != book_list.end(); it++)
+    {
+        if (it->get_book_ISBN() == book_ISBN)
+        {
+            book_list.erase(it);
             return;
         }
         else

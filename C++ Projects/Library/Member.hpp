@@ -4,17 +4,14 @@
 #define MEMBER_H
 
 #include <bits/stdc++.h>
-
 #include "Person.hpp"
-#include "Borrowed_Books.hpp"
+#include "Book.hpp"
 
 using namespace std;
 
-const int MAX_BOOKS_TO_BORROW = 5;
-
 class Member : public Person
 {
-protected:
+private:
     static int library_id_counter;
     int library_id;
     string phone_number;
@@ -77,4 +74,5 @@ void Member::update_member_info()
     cout << "Enter Member updated Phone Number: ";
     cin >> phone_number;
 }
+
 #endif
