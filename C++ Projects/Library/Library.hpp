@@ -33,6 +33,8 @@ public:
     int get_book_position_in_book_list(string book_ISBN);
     // Members and Books Functions
     void member_purchase_book();
+    void member_borrow_book();
+    void member_return_book();
 };
 
 Library::Library()
@@ -57,6 +59,8 @@ void Library::library_main_window()
     cout << "8. Delete Library Book Information" << endl;
     cout << "________ Library Purchase Management System ________" << endl;
     cout << "9. Book Purchase Process" << endl;
+    cout << "10. Book Borrow Process" << endl;
+    cout << "11. Book Return Process" << endl;
     cout << "0. Exit Library" << endl;
     cout << endl
          << "Enter Your Choice: ";
@@ -166,6 +170,17 @@ void Library::library_main_window()
         member_purchase_book();
         library_main_window();
     }
+    else if (choice == 10)
+    {
+        member_borrow_book();
+        library_main_window();
+    }
+    else if (choice == 11)
+    {
+        member_return_book();
+        library_main_window();
+    }
+
     else if (choice == 0)
     {
         cout << "_________________________________ GOODBYE _________________________________" << endl
@@ -353,6 +368,45 @@ void Library::member_purchase_book()
     int decrement_copies = book_list[book_pos].get_book_copies();
     decrement_copies--;
     book_list[book_pos].update_book_copies(decrement_copies);
+}
+
+void Library::member_borrow_book()
+{
+    int member_id;
+    cout << "Enter Member ID: ";
+    cin >> member_id;
+    int member_pos = get_member_position_in_member_list(member_id);
+
+    string book_ISBN;
+    cout << "Enter Book ISBN: ";
+    cin >> book_ISBN;
+    int book_pos = get_book_position_in_book_list(book_ISBN);
+
+    member_list[member_pos].borrow_book(book_list[book_pos]);
+    int decrement_copies = book_list[book_pos].get_book_copies();
+
+    decrement_copies--;
+    book_list[book_pos].update_book_copies(decrement_copies);
+}
+
+void Library::member_return_book()
+{
+    int member_id;
+    cout << "Enter Member ID: ";
+    cin >> member_id;
+    int member_pos = get_member_position_in_member_list(member_id);
+
+    string book_ISBN;
+    cout << "Enter Book ISBN: ";
+    cin >> book_ISBN;
+    int book_pos = get_book_position_in_book_list(book_ISBN);
+
+    member_list[member_pos].return_book(book_list[book_pos]);
+
+    int incremenet_copies = book_list[book_pos].get_book_copies();
+
+    incremenet_copies++;
+    book_list[book_pos].update_book_copies(incremenet_copies);
 }
 
 #endif

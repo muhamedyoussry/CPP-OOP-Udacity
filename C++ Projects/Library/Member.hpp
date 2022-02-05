@@ -16,6 +16,7 @@ private:
     int library_id;
     string phone_number;
     vector<Book> purchase_history;
+    vector<Book> current_borrowed;
 
 public:
     Member();
@@ -25,6 +26,10 @@ public:
     void new_member();
     int get_member_id();
     void purchase_book(Book b);
+    void borrow_book(Book b);
+    void return_book(Book b);
+    void get_purchase_history();
+    void get_current_borrowed();
 };
 
 int Member::library_id_counter = 0;
@@ -80,5 +85,44 @@ void Member::update_member_info()
 void Member::purchase_book(Book b)
 {
     purchase_history.push_back(b);
+}
+
+void Member::borrow_book(Book b)
+{
+    if (current_borrowed.size() < 5)
+    {
+        current_borrowed.push_back(b);
+    }
+    else
+    {
+        cout << "Sorry, You can't borrow more than 5 books ... Try to return some borrowed books first" << endl;
+    }
+}
+
+void Member::return_book(Book b)
+{
+    for (auto it = current_borrowed.begin(); it != current_borrowed.end(); it++)
+    {
+        if (it->get_book_ISBN() == b.get_book_ISBN())
+        {
+            current_borrowed.erase(it);
+            return;
+        }
+    }
+}
+
+void Member::get_purchase_history()
+{
+    for (auto it = purchase_history.begin(); it != purchase_history.end(); it++)
+    {
+        it->print_book_details();
+    }
+}
+void Member::get_current_borrowed()
+{
+    for (auto it = current_borrowed.begin(); it != current_borrowed.end(); it++)
+    {
+        it->print_book_details();
+    }
 }
 #endif
