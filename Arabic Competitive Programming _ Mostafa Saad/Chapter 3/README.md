@@ -5,6 +5,7 @@
 - [3.1 Relational Operators](#31-relational-operators)
 - [3.2 Loops](#32-loops)
   - [3.2.1 The `for` Loop](#321-the-for-loop)
+  - [3.2.1 The `while` Loop](#321-the-while-loop)
 
 
 ## 3.1 Relational Operators
@@ -49,4 +50,32 @@ The *test expression* usually involves a relational operator. It is evaluated ea
 The *increment expression* changes the value of the loop variable, often by incrementing it. It is always executed at the end of the loop.
 
 <p align="center"><img src="./forLoopOperation.png" width ="500"> </p>
+
+You can put more than one expression in the initialization part of the for statement, separating the different expressions by commas. You can also have more than one increment expression. You can have only one test expression.
+
+```cpp
+for( j=0, alpha=100; j<50; j++, beta-- )
+{
+// body of loop
+}
+```
+
+### 3.2.1 The `while` Loop
+
+The next example, ENDON(), asks the user to enter a series of numbers. When the number entered is 0, the loop terminates. Notice that there’s no way for the program to know in advance how many numbers will be typed before the 0 appears; that’s up to the user.
+
+```cpp
+// endon0.cpp
+// demonstrates WHILE loop
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n = 99;    // make sure n isn’t initialized to 0
+    while (n != 0) // loop until n is 0
+        cin >> n;  // read a number into n
+    cout << endl;
+    return 0;
+}
+```
 

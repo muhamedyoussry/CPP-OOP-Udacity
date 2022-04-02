@@ -1,56 +1,67 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-class Employee
-{
-private:
-    string name;
-    static int emp_count;
-
-public:
-    Employee(string name);
-    string getName();
-    static int getEmpCount();
-    void printStatic();
-    static void help();
-};
-
-int Employee::emp_count = 0;
-Employee::Employee(string name)
-{
-    this->name = name;
-    emp_count++;
-}
-
-string Employee::getName()
-{
-    return name;
-}
-int Employee::getEmpCount()
-{
-    return emp_count;
-}
-void Employee::printStatic()
-{
-    cout << "The employee counnt from the static function is : " << Employee::getEmpCount() << endl;
-}
-
-void Employee::help()
-{
-    cout << "Helper Manual for the user " << endl;
-}
 
 int main()
 {
-    Employee em("Mohamed");
-    Employee em2("Mazen");
-    Employee em3("khaled");
 
-    cout << em.getName() << endl;
-    cout << Employee::getEmpCount() << endl;
-    Employee::help();
-    em.printStatic();
+    vector<vector<double>> vertices;
+
+    for (int i = 0; i < 3; i++)
+    {
+        vector<double> col;
+
+        for (int j = 0; j < 2; j++)
+        {
+
+            double item;
+            cin >> item;
+            col.push_back(item);
+        }
+        vertices.push_back(col);
+    }
+
+    for (int i = 0; i < 3; i++)
+    {
+        double x, y;
+        if (i == 0)
+        {
+            x = vertices[1][0] - vertices[2][0];
+            y = vertices[1][1] - vertices[2][1];
+        }
+        else if (i == 1)
+        {
+            x = vertices[0][0] - vertices[1][0];
+            y = vertices[0][1] - vertices[1][1];
+        }
+        else
+        {
+            x = vertices[0][0] - vertices[2][0];
+            y = vertices[0][1] - vertices[2][1];
+        }
+
+        if (x == 0)
+        {
+            cout << "inf" << endl;
+            continue;
+        }
+        else
+        {
+            double s = (y / x);
+            if (s == 0)
+            {
+                s = 0;
+                printf("%1.2f", (float)s);
+            }
+            else
+            {
+                s = -1 / s;
+                printf("%1.2f", (float)s);
+            }
+
+            cout << endl;
+        }
+    }
 
     return 0;
 }
-
